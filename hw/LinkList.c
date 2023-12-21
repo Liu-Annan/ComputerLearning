@@ -1,4 +1,4 @@
-#include "linklist.h"
+#include "LinkList.h"
 
 //初始化链表
 struct linknode* init_linklist()
@@ -12,7 +12,7 @@ struct linknode* init_linklist()
     int val=-1;
     while(true)
     {
-        printf("请输入要插入的数据:\\n");
+        printf("请输入要插入的数据:\n");
         scanf("%d",&val);
         if(val==-1)
         {
@@ -22,7 +22,7 @@ struct linknode* init_linklist()
         struct linknode* newnode = (struct linknode*)malloc(sizeof(struct linknode)); 
         newnode->data=val;
         newnode->next=NULL;
-        
+
 
     }
 }
