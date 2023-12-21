@@ -1,5 +1,7 @@
 #pragma once
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 struct linknode
 {
 	int data;
