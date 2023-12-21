@@ -12,7 +12,7 @@ struct linknode* init_linklist();
 //头插法
 void inserthead(struct linknode* header, int oldval, int newval);
 //删除值为value的结点
-void remove(struct linknode* header, int delval);
+void Remove(struct linknode* header, int delval);
 //遍历
 void traverse(struct linknode* header);
 //销毁

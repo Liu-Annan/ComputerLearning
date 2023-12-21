@@ -43,7 +43,7 @@ void inserthead(struct linknode* header, int oldval, int newval)
     while(pcurrent!=NULL)
     {
         //找到要插入结点的地址就跳出循环
-        if(pcurrent==oldval)
+        if(pcurrent->data==oldval)
         {
             break;
         }
@@ -67,7 +67,7 @@ void inserthead(struct linknode* header, int oldval, int newval)
     }
 }
 //删除值为value的结点
-void remove(struct linknode* header, int delval)
+void Remove(struct linknode* header, int delval)
 {
     if(header==NULL)
     {
