@@ -22,8 +22,12 @@ struct linknode* init_linklist()
         struct linknode* newnode = (struct linknode*)malloc(sizeof(struct linknode)); 
         newnode->data=val;
         newnode->next=NULL;
+        //将新结点插入到链表中
+        pRear->next=newnode;
+        //更新尾部指针
+        pRear=newnode;
 
-
+        return header;
     }
 }
 //尾插法
