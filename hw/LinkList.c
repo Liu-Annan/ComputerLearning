@@ -62,7 +62,7 @@ void inserthead(struct linknode* header, int oldval, int newval)
         newnode->data=newval;
         newnode->next=NULL;
         //将结点插入链表
-        ppreview=newnode;
+        ppreview->next=newnode;
         newnode->next=pcurrent;
     }
 }
