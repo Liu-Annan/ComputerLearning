@@ -26,9 +26,8 @@ struct linknode* init_linklist()
         pRear->next=newnode;
         //更新尾部指针
         pRear=newnode;
-
-        return header;
     }
+    return header;
 }
 //头插法
 void inserthead(struct linknode* header, int oldval, int newval)
